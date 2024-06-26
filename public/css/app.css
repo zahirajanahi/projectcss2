@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1000vh;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 20px 50px;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f3c80;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2f3c80;
+    font-size: 18px;
+    position: relative;
+}
+
+ul li a.active {
+    color: #ff5f5f;
+}
+
+
+
+.contact-button {
+    text-decoration: none;
+    background-color: #ff5f5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact-button:hover {
+    background-color: #ff3f3f;
+}
+span {
+    border-bottom: 3px solid #ff3f3f;
+}
+
+.landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    margin-top:50px;
+    margin-left: 100px;
+}
+.leftside h1{
+   
+    color: #2f3c80;
+    font-size: 70px;
+}
+.leftside p{
+   padding: 10px 0;
+}
+.btns{
+    padding: 20px;
+}
+.btn1{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff5f5f;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.btn2{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e0dbdb;
+    color: #2f3c80;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.second-section{
+    display: flex;
+     gap: 90px;
+     padding-top: 90px;
+}
+
+.getInTouch{
+    padding-left: 90px;
+  
+}
+.getInTouch h1{
+    color: #2f3c80;
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+
+.boxs{
+    display: flex;
+    gap: 40px;
+}
+
+.box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.box h2{
+    color: #2f3c80;
+    padding: 20px 0;
+}
+
+@media (max-width:425px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+     ul{
+        margin-left: 30px;
+     }
+    .landing-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-page h1{
+        font-size: 40px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .btn1 , .btn2{
+      margin: 10px;
+      width: 90%;
+    }
+    img{
+        display: none;
+    }
+    .second-section{
+          display: flex;
+          flex-direction: column;
+    }
+    .boxs{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+}
